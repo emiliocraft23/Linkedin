@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "author": "Elena Rostova",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+    "title": "Lead Software Engineer | Cloud Architect | Technical Speaker",
+    "time": "4 h",
+    "content": "¡Hoy se cumple un año desde que decidí dar el salto al desarrollo de sistemas distribuidos a gran escala! Ha sido un viaje lleno de retos técnicos complejos, noches de depuración y, sobre todo, mucho aprendizaje junto a un equipo brillante. Si estás pensando en salir de tu zona de confort técnico hoy, ¡este es tu recordatorio de que vale totalmente la pena! 🚀 #SoftwareEngineering #CloudComputing #WomenInTech",
+    "likes": 142,
+    "comments": 28,
+    "shares": 5
+  },
+  {
+    "id": 2,
+    "author": "Mateo Silva",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+    "title": "Product Designer @ DesignLab",
+    "time": "1 día",
+    "content": "A veces, el mejor diseño es el que menos se nota. En nuestro último sprint, redujimos la fricción en el flujo de registro eliminando 3 campos innecesarios. El resultado: un incremento del 24% en conversiones completadas durante la primera semana. Menos es más, siempre. ¿Qué opinan sobre simplificar flujos complejos? 👇",
+    "likes": 89,
+    "comments": 15,
+    "shares": 2
+  },
+  {
+    "id": 3,
+    "author": "Sofía Cárdenas",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+    "title": "Directora de Talento Humano",
+    "time": "3 días",
+    "content": "El liderazgo no se trata de tener todas las respuestas, sino de hacer las preguntas correctas y empoderar al equipo para encontrar las soluciones. Me siento muy orgullosa de ver cómo nuestro equipo de ingeniería resolvió autónomamente la migración del Core del sistema este fin de semana sin interrupciones. ¡Excelente trabajo equipo! 👏 #Liderazgo #CulturaCorporativa #Talento",
+    "likes": 312,
+    "comments": 47,
+    "shares": 12
+  }
+]

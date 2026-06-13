@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | LinkedIn (Sin Comentarios)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <a href="#" class="logo-link">in</a>
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="🔍 Buscar">
+        </div>
+      </div>
+      <nav class="navbar-right">
+        <ul class="nav-menu">
+          <li class="nav-item active"><a href="#" class="nav-link"><span>🏠</span><span class="nav-label">Inicio</span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><span>👥</span><span class="nav-label">Mi red</span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><span>💼</span><span class="nav-label">Empleos</span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><span>💬</span><span class="nav-label">Mensajes</span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><span>🔔</span><span class="nav-label">Notificaciones</span></a></li>
+          <li class="nav-item profile-dropdown">
+            <a href="#" class="nav-link" id="profile-dropdown-btn">
+              <div class="nav-profile-avatar">EJ</div>
+              <span class="nav-label-yo">Yo ▼</span>
+            </a>
+          </li>
+          <li class="nav-item"><button id="theme-toggle" class="theme-toggle-btn">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    <div class="container feed-grid-layout">
+      
+      <aside class="left-sidebar-column">
+        <div class="card mini-profile-card">
+          <div class="mini-profile-cover-bg"></div>
+          <div class="mini-profile-avatar-container">
+            <div class="no-profile-photo-mini">EJ</div>
+          </div>
+          <div class="mini-profile-details">
+            <h2 class="mini-profile-name" id="user-name">Emilio Josué Castillo Flores</h2>
+            <p class="mini-profile-headline" id="user-headline">--</p>
+            <p class="mini-profile-location" id="user-location">Quito, Pichincha</p>
+          </div>
+          <hr>
+          <div class="mini-profile-edu">
+            <span>🎓</span>
+            <span class="edu-text" id="user-institution">Universidad Internacional del Ecuador</span>
+          </div>
+        </div>
+
+        <div class="card connections-card">
+          <div class="conn-row">
+            <div>
+              <span class="conn-label">Contactos</span><br>
+              <span class="conn-sub">Amplía tu red</span>
+            </div>
+            <span class="conn-count" id="connection-counter">0</span>
+          </div>
+        </div>
+
+        <div class="card shortcuts-card">
+          <ul class="shortcuts-list">
+            <li><a href="#" class="shortcut-item">🔖 Elementos guardados</a></li>
+            <li><a href="#" class="shortcut-item">👥 Grupos</a></li>
+            <li><a href="#" class="shortcut-item">📰 Newsletters</a></li>
+            <li><a href="#" class="shortcut-item">📅 Eventos</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="middle-feed-column">
+        
+        <article class="card job-poll-card" id="job-poll-section">
+          <button class="poll-close-btn" id="close-poll-btn">&times;</button>
+          <div class="poll-content text-only-poll">
+            <h3 class="poll-title">¡Hola, <span id="poll-greeting-name">Emilio</span>! ¿Estás buscando empleo?</h3>
+            <p class="poll-subtitle">Solo tú puedes ver tu respuesta.</p>
+            <div class="poll-options-row" id="poll-actions-container">
+              <button class="btn-poll-opt" id="poll-yes-btn">Sí</button>
+              <button class="btn-poll-opt" id="poll-no-btn">No</button>
+            </div>
+            <p class="poll-vote-status" id="poll-status-msg" style="display: none;"></p>
+          </div>
+        </article>
+
+        <article class="card create-post-card">
+          <div class="create-post-top">
+            <div class="mini-avatar">EJ</div>
+            <button id="open-post-modal-btn" class="write-post-input-btn">Crear publicación</button>
+          </div>
+          <div class="flex-actions-row">
+            <button class="post-action-btn">🎥 Vídeo</button>
+            <button class="post-action-btn">📷 Foto</button>
+            <button class="post-action-btn">📝 Escribir artículo</button>
+          </div>
+        </article>
+
+        <div class="sorting-row">
+          <hr class="sorting-hr">
+          <span class="sorting-text">Ordenar por: <strong>Principales ▼</strong></span>
+        </div>
+
+        <article class="card recommend-card">
+          <div class="recommend-header"><h3>Te recomendamos</h3></div>
+          <div class="recommend-list">
+            
+            <div class="recommend-item">
+              <div class="recommend-logo claude-badge-text">C</div>
+              <div class="recommend-info">
+                <div class="recommend-title-row">
+                  <h4 class="recommend-name">Claude</h4>
+                  <button class="btn-follow-toggle" data-entity="Claude">+ Seguir</button>
+                </div>
+                <p class="recommend-desc">Claude is an AI assistant built by Anthropic to be safe, accurate, and secure.</p>
+              </div>
+            </div>
+            
+            <hr>
+
+            <div class="recommend-item">
+              <div class="recommend-logo anthropic-badge-text">A</div>
+              <div class="recommend-info">
+                <div class="recommend-title-row">
+                  <h4 class="recommend-name">Anthropic</h4>
+                  <button class="btn-follow-toggle" data-entity="Anthropic">+ Seguir</button>
+                </div>
+                <p class="recommend-desc">Anthropic is an AI safety and research company working to build reliable, interpretable AI.</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="recommend-item">
+              <div class="recommend-logo green-badge">AJE</div>
+              <div class="recommend-info">
+                <div class="recommend-title-row">
+                  <h4 class="recommend-name">AJE ECUADOR</h4>
+                  <button class="btn-follow-toggle" data-entity="AJE Ecuador">+ Seguir</button>
+                </div>
+                <p class="recommend-desc">Pasión por un mundo saludable y natural</p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <div class="feed-header-controls-row">
+          <button class="btn-outline-sm" id="reload-posts-btn" style="background-color: var(--card-bg);">🔄 Recargar</button>
+        </div>
+
+        <div class="feed-content-area" id="posts-container">
+          <div class="skeleton-post">
+            <div class="skeleton-header">
+              <div class="skeleton-avatar shimmer"></div>
+              <div class="skeleton-header-text">
+                <div class="skeleton-line shimmer title-line"></div>
+                <div class="skeleton-line shimmer subtitle-line"></div>
+              </div>
+            </div>
+            <div class="skeleton-body">
+              <div class="skeleton-line shimmer body-line"></div>
+              <div class="skeleton-line shimmer body-line short-line"></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+      <aside class="right-sidebar-column">
+        <div class="card sidebar-card people-card">
+          <h2>Añadir a tu feed</h2>
+          <div class="people-list">
+            
+            <div class="people-item">
+              <div class="people-avatar mj-badge">MJP</div>
+              <div class="people-info">
+                <span class="people-name">María José Pinto</span>
+                <p class="people-title">Vicepresidente constitucional del Ecuador</p>
+                <button class="btn-connect follow-action-btn" data-name="María José Pinto">➕ Seguir</button>
+              </div>
+            </div>
+
+            <div class="people-item">
+              <div class="people-avatar claude-badge-text">C</div>
+              <div class="people-info">
+                <span class="people-name">Claude</span>
+                <p class="people-title">Empresa • Tecnología, información e internet</p>
+                <button class="btn-connect follow-action-btn" data-name="Claude">➕ Seguir</button>
+              </div>
+            </div>
+
+            <div class="people-item">
+              <div class="people-avatar lv-badge">LV</div>
+              <div class="people-info">
+                <span class="people-name">EMBUTIDOS LA VIENESA</span>
+                <p class="people-title">GRUVALCORP S.A. • Alimentos</p>
+                <button class="btn-connect follow-action-btn" data-name="EMBUTIDOS LA VIENESA">➕ Seguir</button>
+              </div>
+            </div>
+
+          </div>
+          <a href="#" class="view-all-recs-link">Ver todas las recomendaciones →</a>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <div class="chat-drawer-container">
+    <div class="chat-drawer" id="chat-tab-manuel">
+      <div class="chat-header" id="chat-header-manuel">
+        <div class="chat-header-user">
+          <div class="chat-mini-avatar initials-badge-chat">MH<span class="online-indicator"></span></div>
+          <span class="chat-header-title">Manuel Herrera (UIDE)</span>
+        </div>
+        <button class="chat-ctrl-btn" id="chat-toggle-size-manuel">▲</button>
+      </div>
+      <div class="chat-body" id="chat-body-manuel">
+        <div class="chat-messages" id="chat-messages-manuel">
+          <div class="chat-bubble received">
+            <p>Hola Emilio, ¿cómo vas con tu proyecto en la UIDE?</p>
+            <span class="chat-time">10:45 AM</span>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <textarea id="chat-textarea-manuel" placeholder="Escribe un mensaje..." rows="1"></textarea>
+          <button id="send-chat-btn-manuel">✉️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="post-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Crear una publicación</h2>
+        <button class="close-modal-btn" id="close-post-modal-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="post-modal-user">
+          <div class="mini-avatar">EJ</div>
+          <h4 class="post-modal-username">Emilio Josué Castillo Flores</h4>
+        </div>
+        <textarea id="post-textarea" placeholder="¿Sobre qué quieres hablar?" rows="4"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary-sm" id="publish-post-btn" disabled>Publicar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="profile-dropdown-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Ajustes del perfil</h2>
+        <button class="close-modal-btn" id="close-dropdown-modal-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group"><label>Nombre</label><input type="text" id="input-name"></div>
+        <div class="form-group"><label>Titular</label><input type="text" id="input-headline"></div>
+        <div class="form-group"><label>Ubicación</label><input type="text" id="input-location"></div>
+        <div class="form-group"><label>Universidad</label><input type="text" id="input-institution"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-outline-sm" id="cancel-settings-btn">Cancelar</button>
+        <button class="btn-primary-sm" id="save-settings-btn">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
